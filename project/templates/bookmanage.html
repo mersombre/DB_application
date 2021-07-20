@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book manage</title>
+</head>
+<body>
+<table border="1">
+    <thread>
+        <th>도서 id</th>
+        <th>분류기호</th>
+        <th>분류명</th>
+    </thread>
+
+    <tbody>
+        {% for book_id in bookmanage %}
+        <tr>
+            <td><center>{{ book_id[0] }}</center></td>
+            <td><center>{{ book_id[1] }}</center></td>
+            <td><center>{{ book_id[2] }}</center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
