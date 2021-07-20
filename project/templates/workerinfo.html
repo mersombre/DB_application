@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>직원 현황</title>
+</head>
+<body>
+
+<lable>직원 현황 보기</lable><br><br>
+<table border="1">
+    <thread>
+        <th>부서</th>
+        <th>직원 수</th>
+    </thread>
+
+    <tbody>
+        {% for part in worker %}
+        <tr>
+            <td><center>{{ part[0] }}</center></td>
+            <td><center>{{ part[1] }}</center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

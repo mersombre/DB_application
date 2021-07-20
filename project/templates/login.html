@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+
+<form action="/login" method="POST">
+    <label for = "user_id">id:</label><br>
+    <input id="user_id" type="text" name="id" value=""><br>
+
+    <label for="user_name">name:</label><br>
+    <input id="user_name" type="text" name="name" value=""><br>
+
+    <input type="submit" name="send" value="login">
+
+</form>
+
+<br>
+<form action="/forworker" method = "POST">
+    <input type="submit" name="send" value="worker menu">
+</form>
+
+<br><br>
+<form action="/signup" method = "POST">
+    <input type="submit" name="send" value="sign up">
+
+</form>
+
+</body>
+</html>

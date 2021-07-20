@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>signup</title>
+</head>
+<body>
+
+    <!--ID 확인-->
+    <form action ='/idcheck' method="POST">
+        <label> ID 중복 검사 버튼 클릭 시 반응 없으면 가입 가능 </label><br><br>
+        <label for ="user_id">중복 검사 확인용 id 입력:</label><br>
+        <input id="user_id" type="text" name="id" value="" maxlength="8">
+        <input type="submit" name="idcheck" value="ID 중복 검사"><br><br><br>
+    </form>
+
+    <!--회원가입-->
+    <form action = '/newmember' method="POST">
+        <label for ="new_id">id:</label><br>
+        <input id= "new_id" type="text" name="id" value="" maxlength="8"><br>
+
+        <label for= "new_name">name:</label><br>
+        <input id= "new_name" type="text" name="name" value="" maxlength = "20">
+
+        <input type="submit" name="signup" value="회원가입">
+
+        <br><br><br>
+        <label> 참고사항<br>아이디는 문자, 숫자 혼용 가능 8자 이내<br>사용자명은 문자, 숫자 혼용 가능 20자 이내</label>
+
+    </form>
+
+    <!--로그인하러가기-->
+    <form action = '/backlogin' method="POST">
+        <input type="submit" name="back to login" value="로그인하러 가기">
+    </form>
+
+
+</body>
+</html>

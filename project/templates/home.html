@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+     <!--도서 검색-->
+    <form action ='/findbook' method="POST">
+        <label> 도서 검색</label><br>
+
+        <label for ="findtitle">책 제목 입력:</label><br>
+        <input id="findtitle" type="text" name="title" value="" maxlength="15">
+        <input type="submit" name="bookcheck" value="검색"><br>
+
+        <br><br>
+    </form>
+
+     <!--책 재고 현황-->
+     <form action ='/findbooknum' method="POST">
+         <label> 재고 검색</label><br>
+
+         <label for ="findtitle2">책 제목 입력:</label><br>
+         <input id="findtitle2" type="text" name="title2" value="" maxlength="15">
+         <input type="submit" name="bookcheck" value="검색"><br>
+         <br><br>
+    </form>
+
+
+     <!-- 연장하기 -->
+    <form action = '/borrowmore' method = 'POST'>
+        <label> 대출기간 연장 신청 </label><br>
+
+        <label for ="id">회원 id 입력:</label><br>
+        <input id="id" type="text" name="id" value="" maxlength="8"><br>
+        <label for ="bookid">연장할 도서 id 입력:</label><br>
+        <input id="bookid" type="text" name="bookid" value="" maxlength="8"><br>
+        <input type="submit" name="newbook" value="신청하기"><br>
+    </form>
+
+
+</body>
+</html>

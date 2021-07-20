@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>대출 연장 확인</title>
+</head>
+<body>
+
+<label> 반납일이 14일 후로 연장되었습니다. </label><br>
+
+<table border="1">
+    <thread>
+        <th>도서 id</th>
+        <th>회원 id</th>
+        <th>대출일자</th>
+        <th>연장된 반납예정일</th>
+    </thread>
+
+    <tbody>
+        {% for book_id in more %}
+        <tr>
+            <td><center>{{ book_id[0] }}</center></td>
+            <td><center>{{ book_id[1] }}</center></td>
+            <td><center>{{ book_id[2] }}</center></td>
+            <td><center>{{ book_id[3] }}</center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

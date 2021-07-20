@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>workermenu</title>
+</head>
+<body>
+     <form action ='/mbmanage' method="POST">
+         <label> 휴면회원 관리 </label><br>
+         <label for ="id">삭제할 회원 id 입력:</label><br>
+         <input id="id" type="text" name="id" value="" maxlength="8">
+         <input type="submit" name="delete" value="삭제하기"><br>
+
+         <br><br>
+     </form>
+
+    <form action ='/bookmanage' method="POST">
+         <label> 장서구분 확인/관리 </label><br>
+         <label for ="bookmg">확인할 도서 id 입력:</label><br>
+         <input id="bookmg" type="text" name="bookid" value="" maxlength="8">
+         <input type="submit" name="findbookmg" value="확인하기"><br>
+
+         <br><br>
+     </form>
+
+    <form action ='/borrower' method="POST">
+        <label> 도서대출자 확인/관리 </label>
+        <input type="submit" name="borrowermg" value="확인하기"><br>
+        <br><br>
+    </form>
+
+    <form action ='/workers' method="POST">
+        <label> 직원 현황 </label>
+        <input type="submit" name="workermg" value="확인하기"><br>
+    </form>
+</body>
+</html>

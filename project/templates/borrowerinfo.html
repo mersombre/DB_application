@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>도서대출자 확인/관리</title>
+</head>
+<body>
+<table border="1">
+    <thread>
+        <th>회원 id</th>
+        <th>도서 id</th>
+        <th>대출일자</th>
+        <th>반납예정일</th>
+    </thread>
+
+    <tbody>
+        {% for borrow in borrower %}
+        <tr>
+            <td><center>{{ borrow[0] }}</center></td>
+            <td><center>{{ borrow[1] }}</center></td>
+            <td><center>{{ borrow[2] }}</center></td>
+            <td><center>{{ borrow[3] }}</center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>도서 검색</title>
+</head>
+<body>
+    <table border="1">
+    <thread>
+        <th>책 id</th>
+        <th>저자</th>
+        <th>제목</th>
+        <th>출판사</th>
+        <th>출판연도</th>
+        <th>ISBN</th>
+        <th>분류기호 (대분류)</th>
+    </thread>
+
+    <tbody>
+        {% for title in findtitle %}
+        <tr>
+            <td><center>{{ title[0] }}</center></td>
+            <td><center>{{ title[1] }}</center></td>
+            <td><center>{{ title[2] }}</center></td>
+            <td><center>{{ title[3] }}</center></td>
+            <td><center>{{ title[4] }}</center></td>
+            <td><center>{{ title[5] }}</center></td>
+            <td><center>{{ title[6] }}</center></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</body>
+</html>
